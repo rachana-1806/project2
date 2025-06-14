@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MITS - Micro Information Technology Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('-translate-x-full');
+    }
+  </script>
+  <style>
+    .sticky-banner {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: #4f46e5;
+      color: white;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Sticky Banner -->
+  <div class="sticky-banner">
+    <a href="#apply" class="text-white hover:underline">Apply for Internship</a>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="fixed inset-y-0 left-0 bg-white shadow-md w-64 transform -translate-x-full transition-transform duration-300 ease-in-out" id="sidebar">
+    <div class="p-4 text-xl font-bold border-b">Menu</div>
+    <nav class="p-4 space-y-4">
+      <a href="#apply" class="block hover:text-indigo-600">Internship Application</a>
+      <a href="#offer" class="block hover:text-indigo-600">Offer Letter</a>
+      <a href="#certificate" class="block hover:text-indigo-600">Certificate Verification</a>
+      <a href="#team" class="block hover:text-indigo-600">Join Our Team</a>
+      <a href="#contact" class="block hover:text-indigo-600">Contact Info</a>
+    </nav>
+  </div>
+
+  <!-- Hamburger Icon -->
+  <button onclick="toggleSidebar()" class="fixed top-3 left-3 z-50 p-2 bg-white shadow-md rounded-full focus:outline-none">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </button>
+
+  <!-- Main Content -->
+  <div class="p-6 ml-0 md:ml-0">
+    <h1 class="text-4xl font-bold text-center text-indigo-700 mb-6">Micro Information Technology Services (MITS)</h1>
+    <p class="text-center max-w-2xl mx-auto mb-8">Our mission is to empower students and professionals through impactful internship opportunities, technical education, and meaningful project collaborations. We connect talent with technology to build a smarter tomorrow.</p>
+
+    <h2 class="text-2xl font-semibold mb-4">University Affiliations</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-10">
+      <!-- Example Logos -->
+      <img src="https://via.placeholder.com/100" alt="University 1" class="w-24 h-24 object-contain mx-auto">
+      <img src="https://via.placeholder.com/100" alt="University 2" class="w-24 h-24 object-contain mx-auto">
+      <img src="https://via.placeholder.com/100" alt="University 3" class="w-24 h-24 object-contain mx-auto">
+      <img src="https://via.placeholder.com/100" alt="University 4" class="w-24 h-24 object-contain mx-auto">
+      <img src="https://via.placeholder.com/100" alt="University 5" class="w-24 h-24 object-contain mx-auto">
+      <img src="https://via.placeholder.com/100" alt="University 6" class="w-24 h-24 object-contain mx-auto">
+      <img src="https://via.placeholder.com/100" alt="University 7" class="w-24 h-24 object-contain mx-auto">
+      <img src="https://via.placeholder.com/100" alt="University 8" class="w-24 h-24 object-contain mx-auto">
+      <img src="https://via.placeholder.com/100" alt="University 9" class="w-24 h-24 object-contain mx-auto">
+      <img src="https://via.placeholder.com/100" alt="University 10" class="w-24 h-24 object-contain mx-auto">
+    </div>
+
+    <h2 class="text-2xl font-semibold mb-2">Social Media Reach</h2>
+    <ul class="list-disc pl-6">
+      <li>Instagram Followers: 15K+</li>
+      <li>LinkedIn Network: 20K+ professionals</li>
+      <li>WhatsApp Community: 200+ groups</li>
+    </ul>
+  </div>
+
+</body>
+</html>
